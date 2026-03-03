@@ -1,0 +1,26 @@
+/Fighter and sympathiser
+/OneDrive
+/Report Slide
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.bak
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.exe
+*.dll
+*.so
+*.dylib
+*.class
+*.jar
+*.war
