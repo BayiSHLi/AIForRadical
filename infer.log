@@ -1,0 +1,2488 @@
+nohup: ignoring input
+`torch_dtype` is deprecated! Use `dtype` instead!
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: f7ebd80e-8c89-4406-972b-fcc3d331e019)')' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/resolve/main/custom_generate/generate.py
+Retrying in 1s [Retry 1/5].
+Available GPUs: 2
+Using devices: [0, 1]
+✓ Model loaded
+
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west sympathiser/DaeshUK/DaeshUK.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west sympathiser/Abu Takfear/Abu Takfear.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west sympathiser/Raqqah123/Raqqah123.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west sympathiser/Ahmed Shazad/Ahmed Shazad.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west sympathiser/Abu Sayfillaah/Abu Sayfillaah.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west sympathiser/British Witness/British Witness.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west sympathiser/Zalkay Khan/Zalkay Khan.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west sympathiser/Abu Tauba al Libi/Abu Tauba al Libi.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west sympathiser/Rahimred/Rahimred.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west sympathiser/Almaadani21/Almaadani21.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west sympathiser/As_Salafi/As_Salafi.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west sympathiser/Abu Saalihah/Abu Saalihah.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS asia fighters/Hidayat bin Azman/Hidayat bin Azman.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS asia fighters/Ahmad Salman Abdul Rahim/Ahmad Salman Abdul Rahim.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS asia fighters/Heri Kustyanto/Heri Kustyanto.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS asia fighters/Wijangga/Wijangga.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS asia fighters/Ratna Nirmala/Ratna Nirmala.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Damien Rodriguez/Damien Rodriguez_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Guy Martin/Guy Martin_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Bruce Windorski/Bruce Windorski_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Jason Pescosolido/Jason Pescosolido_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Albert Avery Harrington/Albert Avery Harrington_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/John Harding/John Harding_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Kurt Emmerson/Kurt Emmerson_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Michael Hickey/Michael Hickey_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Dean Parker/Dean Parker_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Ryan Mufasa Suleski/Ryan Mufasa Suleski_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Aras Mohamed/Aras Mohamed_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Erwin Stran/Erwin Stran_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Jason Troy/Jason Troy_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Robert James Somerville/Robert James Somerville_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Hannah Bohman/Hanna Bohman_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Samantha Jay/Samantha Jay_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Michael Wagnon/Michael Wagnon_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Chris Smith/Chris Smith_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Andrew Hall/Andrew Hall_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Jeremiah Jones/Jeremiah Jones_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Michael Joseph Edelman/Michael Joseph Edelman_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Tim Clerkin/Tim Clerkin_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/Kurdish western fighter/Tyler Jolivette/Tyler Jolivette_UPDATED.xlsm
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west fighters/Ifthekar Jaman Abu Turaab/Ifthekar Jaman Abu Turaab.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west fighters/Mashudur Choudhry/Mashudur Choudhry.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west fighters/Abu Anwar/abu anwar.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west fighters/Aseel Muthanna Abu Farris/Aseel Muthanna Abu Farris.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west fighters/Ismail Jabbar Jabz/Ismail Jabbar Jabz.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west fighters/Ali Kalantar_Ali al-Farsi/Ali Kalantar_Ali al-Farsi.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west fighters/Naseer Muthanna Abul Muthanna/Naseer Muthanna Abul Muthanna.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west fighters/Abu Antarr/Abu Antarr.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west fighters/Mohammed Mehdi_Hassan/Mohammed Mehdi_Hassan Abu Dujana.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west fighters/umm muthanna/umm muthana.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west fighters/Mohammed Hamidur Rahman Abu Uthmaan/Mohammed Hamidur Rahman Abu Uthmaan.xlsx
+/pytorch/aten/src/ATen/native/cuda/TensorCompare.cu:112: _assert_async_cuda_kernel: block: [0,0,0], thread: [0,0,0] Assertion `probability tensor contains either `inf`, `nan` or element < 0` failed.
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS west fighters/Abdel-Majed Abdel Bary/Abdel-Majed Abdel Bary.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS asia sympathiser/Dukung Tomi/Dukung Tomi.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS asia sympathiser/Mujahideen Zulkamal al Malayzi/Mujahideen Zulkamal al Malayzi.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS asia sympathiser/Shami witness/Shamiwitness.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS asia sympathiser/Fakro Ruzi/Fakro Ruzi.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS asia sympathiser/Tomi hendratno/Tomi hendratno.xlsx
+Successfully read file: /home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/ISIS asia sympathiser/Mohd Syahmi Abdul Malik/Mohd Syahmi Abdul Malik.xlsx
+Total loaded 18374 rows
+
+================================================================================
+LLM Inference - BATCH OPTIMIZED VERSION
+================================================================================
+Total samples: 18374
+Already processed: 5827
+Remaining: 12547
+Batch size: 32
+Device: cuda:0 (+ auto device_map)
+Output: llm_results_fast.jsonl
+Start time: 2026-01-16 21:00:50
+================================================================================
+
+
+[Batch] Processing 32 samples...
+  ✗ Error at sample 5858: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 33 samples...
+  ✗ Error at sample 5859: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 34 samples...
+  ✗ Error at sample 5860: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 35 samples...
+  ✗ Error at sample 5861: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 36 samples...
+  ✗ Error at sample 5862: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 37 samples...
+  ✗ Error at sample 5863: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 38 samples...
+  ✗ Error at sample 5864: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 39 samples...
+  ✗ Error at sample 5865: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 40 samples...
+  ✗ Error at sample 5866: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 41 samples...
+  ✗ Error at sample 5867: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 42 samples...
+  ✗ Error at sample 5868: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 43 samples...
+  ✗ Error at sample 5869: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 44 samples...
+  ✗ Error at sample 5870: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 45 samples...
+  ✗ Error at sample 5871: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 46 samples...
+  ✗ Error at sample 5872: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 47 samples...
+  ✗ Error at sample 5873: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 48 samples...
+  ✗ Error at sample 5874: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 49 samples...
+  ✗ Error at sample 5875: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 50 samples...
+  ✗ Error at sample 5876: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 51 samples...
+  ✗ Error at sample 5877: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 52 samples...
+  ✗ Error at sample 5878: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 53 samples...
+  ✗ Error at sample 5879: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 54 samples...
+  ✗ Error at sample 5880: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 55 samples...
+  ✗ Error at sample 5881: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 56 samples...
+  ✗ Error at sample 5882: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 57 samples...
+  ✗ Error at sample 5883: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 58 samples...
+  ✗ Error at sample 5884: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 59 samples...
+  ✗ Error at sample 5885: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 60 samples...
+  ✗ Error at sample 5886: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 61 samples...
+  ✗ Error at sample 5887: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 62 samples...
+  ✗ Error at sample 5888: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 63 samples...
+  ✗ Error at sample 5889: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 64 samples...
+  ✗ Error at sample 5890: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 65 samples...
+  ✗ Error at sample 5891: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 66 samples...
+  ✗ Error at sample 5892: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 67 samples...
+  ✗ Error at sample 5893: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 68 samples...
+  ✗ Error at sample 5894: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 69 samples...
+  ✗ Error at sample 5895: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 70 samples...
+  ✗ Error at sample 5896: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 71 samples...
+  ✗ Error at sample 5897: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 72 samples...
+  ✗ Error at sample 5898: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 73 samples...
+  ✗ Error at sample 5899: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 74 samples...
+  ✗ Error at sample 5900: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 75 samples...
+  ✗ Error at sample 5901: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 76 samples...
+  ✗ Error at sample 5902: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 77 samples...
+  ✗ Error at sample 5903: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 78 samples...
+  ✗ Error at sample 5904: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 79 samples...
+  ✗ Error at sample 5905: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 80 samples...
+  ✗ Error at sample 5906: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 81 samples...
+  ✗ Error at sample 5907: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 82 samples...
+  ✗ Error at sample 5908: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 83 samples...
+  ✗ Error at sample 5909: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 84 samples...
+  ✗ Error at sample 5910: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 85 samples...
+  ✗ Error at sample 5911: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 86 samples...
+  ✗ Error at sample 5912: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 87 samples...
+  ✗ Error at sample 5913: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 88 samples...
+  ✗ Error at sample 5914: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 89 samples...
+  ✗ Error at sample 5915: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 90 samples...
+  ✗ Error at sample 5916: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 91 samples...
+  ✗ Error at sample 5917: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 92 samples...
+  ✗ Error at sample 5918: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 93 samples...
+  ✗ Error at sample 5919: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 94 samples...
+  ✗ Error at sample 5920: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 95 samples...
+  ✗ Error at sample 5921: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 96 samples...
+  ✗ Error at sample 5922: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 97 samples...
+  ✗ Error at sample 5923: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 98 samples...
+  ✗ Error at sample 5924: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 99 samples...
+  ✗ Error at sample 5925: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 100 samples...
+  ✗ Error at sample 5926: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 101 samples...
+  ✗ Error at sample 5927: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 102 samples...
+  ✗ Error at sample 5928: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 103 samples...
+  ✗ Error at sample 5929: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 104 samples...
+  ✗ Error at sample 5930: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 105 samples...
+  ✗ Error at sample 5931: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 106 samples...
+  ✗ Error at sample 5932: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 107 samples...
+  ✗ Error at sample 5933: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 108 samples...
+  ✗ Error at sample 5934: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 109 samples...
+  ✗ Error at sample 5935: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 110 samples...
+  ✗ Error at sample 5936: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 111 samples...
+  ✗ Error at sample 5937: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 112 samples...
+  ✗ Error at sample 5938: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 113 samples...
+  ✗ Error at sample 5939: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 114 samples...
+  ✗ Error at sample 5940: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 115 samples...
+  ✗ Error at sample 5941: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 116 samples...
+  ✗ Error at sample 5942: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 117 samples...
+  ✗ Error at sample 5943: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 118 samples...
+  ✗ Error at sample 5944: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 119 samples...
+  ✗ Error at sample 5945: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 120 samples...
+  ✗ Error at sample 5946: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 121 samples...
+  ✗ Error at sample 5947: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 122 samples...
+  ✗ Error at sample 5948: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 123 samples...
+  ✗ Error at sample 5949: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 124 samples...
+  ✗ Error at sample 5950: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 125 samples...
+  ✗ Error at sample 5951: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 126 samples...
+  ✗ Error at sample 5952: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 127 samples...
+  ✗ Error at sample 5953: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 128 samples...
+  ✗ Error at sample 5954: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 129 samples...
+  ✗ Error at sample 5955: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 130 samples...
+  ✗ Error at sample 5956: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 131 samples...
+  ✗ Error at sample 5957: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 132 samples...
+  ✗ Error at sample 5958: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 133 samples...
+  ✗ Error at sample 5959: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 134 samples...
+  ✗ Error at sample 5960: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 135 samples...
+  ✗ Error at sample 5961: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 136 samples...
+  ✗ Error at sample 5962: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 137 samples...
+  ✗ Error at sample 5963: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 138 samples...
+  ✗ Error at sample 5964: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 139 samples...
+  ✗ Error at sample 5965: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 140 samples...
+  ✗ Error at sample 5966: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 141 samples...
+  ✗ Error at sample 5967: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 142 samples...
+  ✗ Error at sample 5968: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 143 samples...
+  ✗ Error at sample 5969: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 144 samples...
+  ✗ Error at sample 5970: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 145 samples...
+  ✗ Error at sample 5971: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 146 samples...
+  ✗ Error at sample 5972: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 147 samples...
+  ✗ Error at sample 5973: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 148 samples...
+  ✗ Error at sample 5974: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 149 samples...
+  ✗ Error at sample 5975: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 150 samples...
+  ✗ Error at sample 5976: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 151 samples...
+  ✗ Error at sample 5977: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 152 samples...
+  ✗ Error at sample 5978: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 153 samples...
+  ✗ Error at sample 5979: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 154 samples...
+  ✗ Error at sample 5980: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 155 samples...
+  ✗ Error at sample 5981: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 156 samples...
+  ✗ Error at sample 5982: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 157 samples...
+  ✗ Error at sample 5983: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 158 samples...
+  ✗ Error at sample 5984: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 159 samples...
+  ✗ Error at sample 5985: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 160 samples...
+  ✗ Error at sample 5986: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 161 samples...
+  ✗ Error at sample 5987: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 162 samples...
+  ✗ Error at sample 5988: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 163 samples...
+  ✗ Error at sample 5989: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 164 samples...
+  ✗ Error at sample 5990: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 165 samples...
+  ✗ Error at sample 5991: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 166 samples...
+  ✗ Error at sample 5992: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 167 samples...
+  ✗ Error at sample 5993: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 168 samples...
+  ✗ Error at sample 5994: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 169 samples...
+  ✗ Error at sample 5995: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 170 samples...
+  ✗ Error at sample 5996: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 171 samples...
+  ✗ Error at sample 5997: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 172 samples...
+  ✗ Error at sample 5998: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 173 samples...
+  ✗ Error at sample 5999: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 174 samples...
+  ✗ Error at sample 6000: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 175 samples...
+  ✗ Error at sample 6001: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 176 samples...
+  ✗ Error at sample 6002: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 177 samples...
+  ✗ Error at sample 6003: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 178 samples...
+  ✗ Error at sample 6004: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 179 samples...
+  ✗ Error at sample 6005: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 180 samples...
+  ✗ Error at sample 6006: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 181 samples...
+  ✗ Error at sample 6007: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 182 samples...
+  ✗ Error at sample 6008: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 183 samples...
+  ✗ Error at sample 6009: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 184 samples...
+  ✗ Error at sample 6010: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 185 samples...
+  ✗ Error at sample 6011: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 186 samples...
+  ✗ Error at sample 6012: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 187 samples...
+  ✗ Error at sample 6013: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 188 samples...
+  ✗ Error at sample 6014: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 189 samples...
+  ✗ Error at sample 6015: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 190 samples...
+  ✗ Error at sample 6016: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 191 samples...
+  ✗ Error at sample 6017: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 192 samples...
+  ✗ Error at sample 6018: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 193 samples...
+  ✗ Error at sample 6019: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 194 samples...
+  ✗ Error at sample 6020: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 195 samples...
+  ✗ Error at sample 6021: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 196 samples...
+  ✗ Error at sample 6022: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 197 samples...
+  ✗ Error at sample 6023: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 198 samples...
+  ✗ Error at sample 6024: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 199 samples...
+  ✗ Error at sample 6025: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 200 samples...
+  ✗ Error at sample 6026: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 201 samples...
+  ✗ Error at sample 6027: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 202 samples...
+  ✗ Error at sample 6028: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 203 samples...
+  ✗ Error at sample 6029: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 204 samples...
+  ✗ Error at sample 6030: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 205 samples...
+  ✗ Error at sample 6031: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 206 samples...
+  ✗ Error at sample 6032: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 207 samples...
+  ✗ Error at sample 6033: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 208 samples...
+  ✗ Error at sample 6034: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 209 samples...
+  ✗ Error at sample 6035: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 210 samples...
+  ✗ Error at sample 6036: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 211 samples...
+  ✗ Error at sample 6037: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 212 samples...
+  ✗ Error at sample 6038: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 213 samples...
+  ✗ Error at sample 6039: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 214 samples...
+  ✗ Error at sample 6040: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 215 samples...
+  ✗ Error at sample 6041: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 216 samples...
+  ✗ Error at sample 6042: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 217 samples...
+  ✗ Error at sample 6043: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 218 samples...
+  ✗ Error at sample 6044: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 219 samples...
+  ✗ Error at sample 6045: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 220 samples...
+  ✗ Error at sample 6046: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 221 samples...
+  ✗ Error at sample 6047: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 222 samples...
+  ✗ Error at sample 6048: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 223 samples...
+  ✗ Error at sample 6049: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 224 samples...
+  ✗ Error at sample 6050: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 225 samples...
+  ✗ Error at sample 6051: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 226 samples...
+  ✗ Error at sample 6052: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 227 samples...
+  ✗ Error at sample 6053: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 228 samples...
+  ✗ Error at sample 6054: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 229 samples...
+  ✗ Error at sample 6055: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 230 samples...
+  ✗ Error at sample 6056: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 231 samples...
+  ✗ Error at sample 6057: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 232 samples...
+  ✗ Error at sample 6058: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 233 samples...
+  ✗ Error at sample 6059: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 234 samples...
+  ✗ Error at sample 6060: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 235 samples...
+  ✗ Error at sample 6061: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 236 samples...
+  ✗ Error at sample 6062: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 237 samples...
+  ✗ Error at sample 6063: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 238 samples...
+  ✗ Error at sample 6064: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 239 samples...
+  ✗ Error at sample 6065: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 240 samples...
+  ✗ Error at sample 6066: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 241 samples...
+  ✗ Error at sample 6067: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 242 samples...
+  ✗ Error at sample 6068: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 243 samples...
+  ✗ Error at sample 6069: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 244 samples...
+  ✗ Error at sample 6070: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 245 samples...
+  ✗ Error at sample 6071: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 246 samples...
+  ✗ Error at sample 6072: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 247 samples...
+  ✗ Error at sample 6073: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 248 samples...
+  ✗ Error at sample 6074: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 249 samples...
+  ✗ Error at sample 6075: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 250 samples...
+  ✗ Error at sample 6076: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 251 samples...
+  ✗ Error at sample 6077: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 252 samples...
+  ✗ Error at sample 6078: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 253 samples...
+  ✗ Error at sample 6079: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 254 samples...
+  ✗ Error at sample 6080: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 255 samples...
+  ✗ Error at sample 6081: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 256 samples...
+  ✗ Error at sample 6082: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 257 samples...
+  ✗ Error at sample 6083: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 258 samples...
+  ✗ Error at sample 6084: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 259 samples...
+  ✗ Error at sample 6085: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 260 samples...
+  ✗ Error at sample 6086: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 261 samples...
+  ✗ Error at sample 6087: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 262 samples...
+  ✗ Error at sample 6088: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 263 samples...
+  ✗ Error at sample 6089: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 264 samples...
+  ✗ Error at sample 6090: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 265 samples...
+  ✗ Error at sample 6091: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 266 samples...
+  ✗ Error at sample 6092: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 267 samples...
+  ✗ Error at sample 6093: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 268 samples...
+  ✗ Error at sample 6094: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 269 samples...
+  ✗ Error at sample 6095: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 270 samples...
+  ✗ Error at sample 6096: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 271 samples...
+  ✗ Error at sample 6097: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 272 samples...
+  ✗ Error at sample 6098: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 273 samples...
+  ✗ Error at sample 6099: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 274 samples...
+  ✗ Error at sample 6100: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 275 samples...
+  ✗ Error at sample 6101: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 276 samples...
+  ✗ Error at sample 6102: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 277 samples...
+  ✗ Error at sample 6103: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 278 samples...
+  ✗ Error at sample 6104: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 279 samples...
+  ✗ Error at sample 6105: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 280 samples...
+  ✗ Error at sample 6106: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 281 samples...
+  ✗ Error at sample 6107: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 282 samples...
+  ✗ Error at sample 6108: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 283 samples...
+  ✗ Error at sample 6109: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 284 samples...
+  ✗ Error at sample 6110: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 285 samples...
+  ✗ Error at sample 6111: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 286 samples...
+  ✗ Error at sample 6112: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 287 samples...
+  ✗ Error at sample 6113: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 288 samples...
+  ✗ Error at sample 6114: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 289 samples...
+  ✗ Error at sample 6115: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 290 samples...
+  ✗ Error at sample 6116: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 291 samples...
+  ✗ Error at sample 6117: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 292 samples...
+  ✗ Error at sample 6118: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 293 samples...
+  ✗ Error at sample 6119: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 294 samples...
+  ✗ Error at sample 6120: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 295 samples...
+  ✗ Error at sample 6121: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 296 samples...
+  ✗ Error at sample 6122: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 297 samples...
+  ✗ Error at sample 6123: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 298 samples...
+  ✗ Error at sample 6124: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 299 samples...
+  ✗ Error at sample 6125: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 300 samples...
+  ✗ Error at sample 6126: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 301 samples...
+  ✗ Error at sample 6127: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 302 samples...
+  ✗ Error at sample 6128: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 303 samples...
+  ✗ Error at sample 6129: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 304 samples...
+  ✗ Error at sample 6130: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 305 samples...
+  ✗ Error at sample 6131: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 306 samples...
+  ✗ Error at sample 6132: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 307 samples...
+  ✗ Error at sample 6133: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 308 samples...
+  ✗ Error at sample 6134: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 309 samples...
+  ✗ Error at sample 6135: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 310 samples...
+  ✗ Error at sample 6136: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 311 samples...
+  ✗ Error at sample 6137: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 312 samples...
+  ✗ Error at sample 6138: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 313 samples...
+  ✗ Error at sample 6139: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 314 samples...
+  ✗ Error at sample 6140: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 315 samples...
+  ✗ Error at sample 6141: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 316 samples...
+  ✗ Error at sample 6142: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 317 samples...
+  ✗ Error at sample 6143: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 318 samples...
+  ✗ Error at sample 6144: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 319 samples...
+  ✗ Error at sample 6145: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 320 samples...
+  ✗ Error at sample 6146: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 321 samples...
+  ✗ Error at sample 6147: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 322 samples...
+  ✗ Error at sample 6148: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 323 samples...
+  ✗ Error at sample 6149: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 324 samples...
+  ✗ Error at sample 6150: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 325 samples...
+  ✗ Error at sample 6151: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 326 samples...
+  ✗ Error at sample 6152: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 327 samples...
+  ✗ Error at sample 6153: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 328 samples...
+  ✗ Error at sample 6154: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 329 samples...
+  ✗ Error at sample 6155: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 330 samples...
+  ✗ Error at sample 6156: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 331 samples...
+  ✗ Error at sample 6157: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 332 samples...
+  ✗ Error at sample 6158: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 333 samples...
+  ✗ Error at sample 6159: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 334 samples...
+  ✗ Error at sample 6160: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 335 samples...
+  ✗ Error at sample 6161: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 336 samples...
+  ✗ Error at sample 6162: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 337 samples...
+  ✗ Error at sample 6163: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 338 samples...
+  ✗ Error at sample 6164: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 339 samples...
+  ✗ Error at sample 6165: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 340 samples...
+  ✗ Error at sample 6166: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 341 samples...
+  ✗ Error at sample 6167: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 342 samples...
+  ✗ Error at sample 6168: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 343 samples...
+  ✗ Error at sample 6169: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 344 samples...
+  ✗ Error at sample 6170: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 345 samples...
+  ✗ Error at sample 6171: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 346 samples...
+  ✗ Error at sample 6172: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 347 samples...
+  ✗ Error at sample 6173: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 348 samples...
+  ✗ Error at sample 6174: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 349 samples...
+  ✗ Error at sample 6175: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 350 samples...
+  ✗ Error at sample 6176: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 351 samples...
+  ✗ Error at sample 6177: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 352 samples...
+  ✗ Error at sample 6178: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 353 samples...
+  ✗ Error at sample 6179: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 354 samples...
+  ✗ Error at sample 6180: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 355 samples...
+  ✗ Error at sample 6181: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 356 samples...
+  ✗ Error at sample 6182: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 357 samples...
+  ✗ Error at sample 6183: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 358 samples...
+  ✗ Error at sample 6184: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 359 samples...
+  ✗ Error at sample 6185: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 360 samples...
+  ✗ Error at sample 6186: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 361 samples...
+  ✗ Error at sample 6187: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 362 samples...
+  ✗ Error at sample 6188: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 363 samples...
+  ✗ Error at sample 6189: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 364 samples...
+  ✗ Error at sample 6190: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 365 samples...
+  ✗ Error at sample 6191: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 366 samples...
+  ✗ Error at sample 6192: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 367 samples...
+  ✗ Error at sample 6193: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 368 samples...
+  ✗ Error at sample 6194: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 369 samples...
+  ✗ Error at sample 6195: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 370 samples...
+  ✗ Error at sample 6196: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 371 samples...
+  ✗ Error at sample 6197: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 372 samples...
+  ✗ Error at sample 6198: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 373 samples...
+  ✗ Error at sample 6199: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 374 samples...
+  ✗ Error at sample 6200: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 375 samples...
+  ✗ Error at sample 6201: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 376 samples...
+  ✗ Error at sample 6202: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 377 samples...
+  ✗ Error at sample 6203: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 378 samples...
+  ✗ Error at sample 6204: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 379 samples...
+  ✗ Error at sample 6205: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 380 samples...
+  ✗ Error at sample 6206: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 381 samples...
+  ✗ Error at sample 6207: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 382 samples...
+  ✗ Error at sample 6208: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 383 samples...
+  ✗ Error at sample 6209: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 384 samples...
+  ✗ Error at sample 6210: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 385 samples...
+  ✗ Error at sample 6211: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 386 samples...
+  ✗ Error at sample 6212: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 387 samples...
+  ✗ Error at sample 6213: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 388 samples...
+  ✗ Error at sample 6214: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 389 samples...
+  ✗ Error at sample 6215: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 390 samples...
+  ✗ Error at sample 6216: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 391 samples...
+  ✗ Error at sample 6217: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 392 samples...
+  ✗ Error at sample 6218: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 393 samples...
+  ✗ Error at sample 6219: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 394 samples...
+  ✗ Error at sample 6220: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 395 samples...
+  ✗ Error at sample 6221: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 396 samples...
+  ✗ Error at sample 6222: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 397 samples...
+  ✗ Error at sample 6223: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 398 samples...
+  ✗ Error at sample 6224: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 399 samples...
+  ✗ Error at sample 6225: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 400 samples...
+  ✗ Error at sample 6226: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 401 samples...
+  ✗ Error at sample 6227: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 402 samples...
+  ✗ Error at sample 6228: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 403 samples...
+  ✗ Error at sample 6229: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 404 samples...
+  ✗ Error at sample 6230: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 405 samples...
+  ✗ Error at sample 6231: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 406 samples...
+  ✗ Error at sample 6232: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 407 samples...
+  ✗ Error at sample 6233: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 408 samples...
+  ✗ Error at sample 6234: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 409 samples...
+  ✗ Error at sample 6235: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 410 samples...
+  ✗ Error at sample 6236: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 411 samples...
+  ✗ Error at sample 6237: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 412 samples...
+  ✗ Error at sample 6238: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 413 samples...
+  ✗ Error at sample 6239: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 414 samples...
+  ✗ Error at sample 6240: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 415 samples...
+  ✗ Error at sample 6241: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 416 samples...
+  ✗ Error at sample 6242: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 417 samples...
+  ✗ Error at sample 6243: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 418 samples...
+  ✗ Error at sample 6244: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 419 samples...
+  ✗ Error at sample 6245: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 420 samples...
+  ✗ Error at sample 6246: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 421 samples...
+  ✗ Error at sample 6247: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 422 samples...
+  ✗ Error at sample 6248: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 423 samples...
+  ✗ Error at sample 6249: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 424 samples...
+  ✗ Error at sample 6250: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 425 samples...
+  ✗ Error at sample 6251: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 426 samples...
+  ✗ Error at sample 6252: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 427 samples...
+  ✗ Error at sample 6253: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 428 samples...
+  ✗ Error at sample 6254: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 429 samples...
+  ✗ Error at sample 6255: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 430 samples...
+  ✗ Error at sample 6256: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 431 samples...
+  ✗ Error at sample 6257: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 432 samples...
+  ✗ Error at sample 6258: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 433 samples...
+  ✗ Error at sample 6259: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 434 samples...
+  ✗ Error at sample 6260: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 435 samples...
+  ✗ Error at sample 6261: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 436 samples...
+  ✗ Error at sample 6262: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 437 samples...
+  ✗ Error at sample 6263: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 438 samples...
+  ✗ Error at sample 6264: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 439 samples...
+  ✗ Error at sample 6265: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 440 samples...
+  ✗ Error at sample 6266: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 441 samples...
+  ✗ Error at sample 6267: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 442 samples...
+  ✗ Error at sample 6268: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 443 samples...
+  ✗ Error at sample 6269: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 444 samples...
+  ✗ Error at sample 6270: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 445 samples...
+  ✗ Error at sample 6271: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 446 samples...
+  ✗ Error at sample 6272: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 447 samples...
+  ✗ Error at sample 6273: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 448 samples...
+  ✗ Error at sample 6274: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 449 samples...
+  ✗ Error at sample 6275: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 450 samples...
+  ✗ Error at sample 6276: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 451 samples...
+  ✗ Error at sample 6277: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 452 samples...
+  ✗ Error at sample 6278: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 453 samples...
+  ✗ Error at sample 6279: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 454 samples...
+  ✗ Error at sample 6280: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 455 samples...
+  ✗ Error at sample 6281: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 456 samples...
+  ✗ Error at sample 6282: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 457 samples...
+  ✗ Error at sample 6283: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 458 samples...
+  ✗ Error at sample 6284: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 459 samples...
+  ✗ Error at sample 6285: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 460 samples...
+  ✗ Error at sample 6286: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 461 samples...
+  ✗ Error at sample 6287: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 462 samples...
+  ✗ Error at sample 6288: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 463 samples...
+  ✗ Error at sample 6289: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 464 samples...
+  ✗ Error at sample 6290: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 465 samples...
+  ✗ Error at sample 6291: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 466 samples...
+  ✗ Error at sample 6292: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 467 samples...
+  ✗ Error at sample 6293: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 468 samples...
+  ✗ Error at sample 6294: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 469 samples...
+  ✗ Error at sample 6295: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 470 samples...
+  ✗ Error at sample 6296: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 471 samples...
+  ✗ Error at sample 6297: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 472 samples...
+  ✗ Error at sample 6298: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 473 samples...
+  ✗ Error at sample 6299: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 474 samples...
+  ✗ Error at sample 6300: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 475 samples...
+  ✗ Error at sample 6301: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 476 samples...
+  ✗ Error at sample 6302: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 477 samples...
+  ✗ Error at sample 6303: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 478 samples...
+  ✗ Error at sample 6304: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 479 samples...
+  ✗ Error at sample 6305: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 480 samples...
+  ✗ Error at sample 6306: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 481 samples...
+  ✗ Error at sample 6307: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 482 samples...
+  ✗ Error at sample 6308: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 483 samples...
+  ✗ Error at sample 6309: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 484 samples...
+  ✗ Error at sample 6310: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 485 samples...
+  ✗ Error at sample 6311: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 486 samples...
+  ✗ Error at sample 6312: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 487 samples...
+  ✗ Error at sample 6313: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 488 samples...
+  ✗ Error at sample 6314: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 489 samples...
+  ✗ Error at sample 6315: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 490 samples...
+  ✗ Error at sample 6316: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 491 samples...
+  ✗ Error at sample 6317: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 492 samples...
+  ✗ Error at sample 6318: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 493 samples...
+  ✗ Error at sample 6319: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 494 samples...
+  ✗ Error at sample 6320: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 495 samples...
+  ✗ Error at sample 6321: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 496 samples...
+  ✗ Error at sample 6322: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 497 samples...
+  ✗ Error at sample 6323: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 498 samples...
+  ✗ Error at sample 6324: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 499 samples...
+  ✗ Error at sample 6325: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 500 samples...
+  ✗ Error at sample 6326: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 501 samples...
+  ✗ Error at sample 6327: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 502 samples...
+  ✗ Error at sample 6328: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 503 samples...
+  ✗ Error at sample 6329: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 504 samples...
+  ✗ Error at sample 6330: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 505 samples...
+  ✗ Error at sample 6331: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 506 samples...
+  ✗ Error at sample 6332: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 507 samples...
+  ✗ Error at sample 6333: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 508 samples...
+  ✗ Error at sample 6334: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 509 samples...
+  ✗ Error at sample 6335: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 510 samples...
+  ✗ Error at sample 6336: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 511 samples...
+  ✗ Error at sample 6337: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 512 samples...
+  ✗ Error at sample 6338: CUDA error: device-side assert triggered
+Search for `cudaErrorAssert' in https://docs.nvidia.com/cud
+
+
+[Batch] Processing 513 samples...
