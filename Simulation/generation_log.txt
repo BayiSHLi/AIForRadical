@@ -1,0 +1,23 @@
+2026-03-04 00:45:04,570 - INFO - 🚀 初始化模型: mistralai/Mistral-7B-Instruct-v0.1
+2026-03-04 00:45:04,570 - INFO - 📊 设备: cuda
+2026-03-04 00:45:04,591 - INFO - 💾 GPU 0: NVIDIA RTX 6000 Ada Generation
+2026-03-04 00:45:04,591 - INFO - 📈 显存: 44.4GB
+2026-03-04 00:45:04,591 - INFO - 加载 tokenizer...
+2026-03-04 00:45:05,411 - INFO - ✓ Tokenizer 加载完成
+2026-03-04 00:45:05,411 - INFO - 加载模型 (float16)...
+`torch_dtype` is deprecated! Use `dtype` instead!
+✓ Simulator 配置已加载
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.94s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.34s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.43s/it]
+2026-03-04 00:45:09,397 - INFO - ✓ 模型加载完成
+2026-03-04 00:45:09,397 - INFO - 
+🧪 开始测试:
+2026-03-04 00:45:09,397 - INFO -    Indicator: individual_loss_interpersonal
+2026-03-04 00:45:09,397 - INFO -    Radicality: Low
+2026-03-04 00:45:09,397 - INFO -    生成数量: 5
+2026-03-04 00:45:09,397 - INFO - 
+2026-03-04 00:45:09,397 - INFO - 📝 开始生成 5 个样本
+2026-03-04 00:45:09,397 - INFO -    Indicator: individual_loss_interpersonal
+2026-03-04 00:45:09,397 - INFO -    Radicality: Low
+2026-03-04 00:45:09,398 - INFO -   生成样本 1...
+2026-03-04 00:47:58,536 - INFO -   ✓ 样本 1: tools Jah Jah Jah...
+2026-03-04 00:47:58,537 - INFO -   生成样本 2...
