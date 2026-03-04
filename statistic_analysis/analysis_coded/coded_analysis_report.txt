@@ -1,0 +1,102 @@
+================================================================================
+CODED CONTENT ANALYSIS REPORT
+Based on Neo (2020): Detecting Markers of Radicalisation in Social Media
+================================================================================
+
+1. DATA OVERVIEW
+--------------------------------------------------------------------------------
+Total posts: 18,374
+Posts with coded=1: 1,343 (7.3%)
+Number of indicators analyzed: 79
+
+2. INDICATOR PREVALENCE
+--------------------------------------------------------------------------------
+Most prevalent indicators (among coded=1 posts):
+
+ 1. narrative_nonviolent_muslim_brotherhood [Narrative: Non-Violent] 88 (6.6%)
+ 2. network_radical_educational_setting [Network: Radical] 84 (6.3%)
+ 3. identity_fusion_target_god     [Identity Fusion: Targets] 84 (6.3%)
+ 4. significance_gain_training     [Need: Significance Gain] 81 (6.0%)
+ 5. significance_gain_career       [Need: Significance Gain] 80 (6.0%)
+ 6. significance_gain_leadership   [Need: Significance Gain] 79 (5.9%)
+ 7. narrative_disagreement_ideology_takfiri [Narrative: Disagreement] 79 (5.9%)
+ 8. narrative_religious_historical_references [Narrative: Other] 79 (5.9%)
+ 9. identity_fusion_defusion_removal [Identity Fusion: Defusion] 79 (5.9%)
+10. quest_significance_dualistic   [Need: Quest for Significance] 77 (5.7%)
+
+3. FIGHTERS VS SYMPATHISERS COMPARISON
+--------------------------------------------------------------------------------
+Fighters: 40 indicators more prevalent
+Sympathisers: 39 indicators more prevalent
+
+Top differentiating indicators:
+
+network_nonradical_places_locations
+  Fighter:        4.5% ( 39)
+  Sympathiser:    7.3% ( 34)
+  Difference:    -2.8%
+
+network_radical_group         
+  Fighter:        4.3% ( 38)
+  Sympathiser:    7.1% ( 33)
+  Difference:    -2.7%
+
+network_radical_individual    
+  Fighter:        4.8% ( 42)
+  Sympathiser:    7.5% ( 35)
+  Difference:    -2.7%
+
+social_loss_non_religious     
+  Fighter:        6.1% ( 53)
+  Sympathiser:    3.4% ( 16)
+  Difference:    +2.6%
+
+network_nonradical_educational_setting
+  Fighter:        5.6% ( 49)
+  Sympathiser:    3.2% ( 15)
+  Difference:    +2.4%
+
+individual_loss_career        
+  Fighter:        5.9% ( 52)
+  Sympathiser:    3.6% ( 17)
+  Difference:    +2.3%
+
+narrative_nonviolent_salafi   
+  Fighter:        4.3% ( 38)
+  Sympathiser:    6.6% ( 31)
+  Difference:    -2.3%
+
+quest_significance_dualistic  
+  Fighter:        6.5% ( 57)
+  Sympathiser:    4.3% ( 20)
+  Difference:    +2.2%
+
+identity_fusion_behavior_prioritize_group
+  Fighter:        3.9% ( 34)
+  Sympathiser:    6.0% ( 28)
+  Difference:    -2.1%
+
+identity_fusion_target_family 
+  Fighter:        4.1% ( 36)
+  Sympathiser:    6.2% ( 29)
+  Difference:    -2.1%
+
+4. LOGISTIC REGRESSION MODEL PERFORMANCE
+--------------------------------------------------------------------------------
+Sample size: 1343
+  Fighters: 875
+  Sympathisers: 468
+
+Model Performance:
+  Accuracy:  0.675
+  Precision: 0.685
+  Recall:    0.926
+  F1-Score:  0.788
+  AUC-ROC:   0.646
+
+Interpretation:
+⚠ Model shows moderate discriminative power (Accuracy=67.5%)
+
+================================================================================
+END OF REPORT
+================================================================================

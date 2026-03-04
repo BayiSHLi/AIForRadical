@@ -1,0 +1,100 @@
+================================================================================
+RADICALITY LEVEL ANALYSIS REPORT
+================================================================================
+Generated Samples: 6320
+Analysis Date: 2026-03-04 02:41:47
+
+--------------------------------------------------------------------------------
+RADICALITY: NEUTRAL
+--------------------------------------------------------------------------------
+Sample Count: 1580
+Unique Indicators: 79
+Average Word Count: 17.78
+Average Character Count: 103.99
+Word Count Range: 8 - 37
+Character Count Range: 48 - 202
+
+Top 10 Words:
+   1. old                  -   213 occurrences
+   2. everyday             -   165 occurrences
+   3. ordinary             -   157 occurrences
+   4. day                  -   141 occurrences
+   5. reading              -   137 occurrences
+   6. really               -   118 occurrences
+   7. new                  -   118 occurrences
+   8. life                 -   118 occurrences
+   9. finished             -   118 occurrences
+  10. morning              -   106 occurrences
+
+--------------------------------------------------------------------------------
+RADICALITY: LOW
+--------------------------------------------------------------------------------
+Sample Count: 1580
+Unique Indicators: 79
+Average Word Count: 18.31
+Average Character Count: 112.05
+Word Count Range: 5 - 46
+Character Count Range: 52 - 249
+
+Top 10 Words:
+   1. online               -   419 occurrences
+   2. radical              -   327 occurrences
+   3. really               -   279 occurrences
+   4. heard                -   233 occurrences
+   5. exposure             -   217 occurrences
+   6. got                  -   202 occurrences
+   7. new                  -   186 occurrences
+   8. group                -   155 occurrences
+   9. across               -   148 occurrences
+  10. pretty               -   144 occurrences
+
+--------------------------------------------------------------------------------
+RADICALITY: MEDIUM
+--------------------------------------------------------------------------------
+Sample Count: 1580
+Unique Indicators: 79
+Average Word Count: 19.21
+Average Character Count: 116.67
+Word Count Range: 0 - 37
+Character Count Range: 38 - 220
+
+Top 10 Words:
+   1. local                -   580 occurrences
+   2. community            -   561 occurrences
+   3. group                -   414 occurrences
+   4. involved             -   364 occurrences
+   5. really               -   358 occurrences
+   6. support              -   213 occurrences
+   7. joined               -   206 occurrences
+   8. member               -   186 occurrences
+   9. non                  -   183 occurrences
+  10. feeling              -   177 occurrences
+
+--------------------------------------------------------------------------------
+RADICALITY: HIGH
+--------------------------------------------------------------------------------
+Sample Count: 1580
+Unique Indicators: 79
+Average Word Count: 19.15
+Average Character Count: 114.36
+Word Count Range: 5 - 47
+Character Count Range: 54 - 273
+
+Top 10 Words:
+   1. violent              -   527 occurrences
+   2. jihad                -   330 occurrences
+   3. fight                -   280 occurrences
+   4. violence             -   183 occurrences
+   5. radical              -   146 occurrences
+   6. online               -   124 occurrences
+   7. feels                -   119 occurrences
+   8. peaceful             -   113 occurrences
+   9. martyrdom            -   111 occurrences
+  10. path                 -   102 occurrences
+
+================================================================================
+KEY OBSERVATIONS
+================================================================================
+- Word frequency analysis reveals distinctive vocabulary patterns per radicality level
+- Text length metrics (words/characters) show distribution characteristics
+- Word clouds provide visual representation of dominant themes

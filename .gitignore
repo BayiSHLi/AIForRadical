@@ -24,3 +24,5 @@ Thumbs.db
 *.class
 *.jar
 *.war
+*.jsonl
+/data  

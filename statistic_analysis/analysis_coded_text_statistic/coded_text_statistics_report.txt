@@ -1,0 +1,78 @@
+================================================================================
+CODED TEXT STATISTICS REPORT
+Text Analysis Combined with Coded Labels
+================================================================================
+
+1. BASIC STATISTICS
+--------------------------------------------------------------------------------
+Total posts: 18,374
+Coded=1:     1,343 (7.3%)
+Coded=0:     17,031 (92.7%)
+
+2. TEXT QUALITY METRICS
+--------------------------------------------------------------------------------
+Text Length (characters):
+  Coded=0: Mean=88.4, Median=76.0, Std=107.5
+  Coded=1: Mean=172.1, Median=126.0, Std=537.0
+  Difference: +83.7
+
+Word Count:
+  Coded=0: Mean=14.5, Median=12.0, Std=19.1
+  Coded=1: Mean=29.9, Median=21.0, Std=87.6
+  Difference: +15.4
+
+3. WORD FREQUENCY COMPARISON
+--------------------------------------------------------------------------------
+Detected Handles (removed from analysis): 16
+  - accusers
+  - beijing
+  - curiouser
+  - itsljinny
+  - jin
+  - jinn
+  - jinnnnnnnny
+  - jinns
+  - jinny
+  - jinnyman
+  - jinnyyyyyyyy
+  - ljinny
+  - teamjinny
+  - trousers
+  - tyrousers
+  - users
+
+Coded=0 Top Words (after removing handles):
+  nov                     857
+  allah                   830
+  new                     825
+  like                    678
+  one                     676
+  bless                   656
+  amp                     577
+  video                   568
+  people                  549
+  check                   501
+
+Coded=1 Top Words (after removing handles):
+  allah                   189
+  muslims                 186
+  people                  174
+  islam                   124
+  one                     119
+  may                     101
+  muslim                  100
+  isis                     99
+  like                     95
+  islamic                  90
+
+4. CATEGORY ANALYSIS
+--------------------------------------------------------------------------------
+ISIS west sympathiser               Coded=1:  252 /  1130 ( 22.3%)
+ISIS asia fighters                  Coded=1:   73 /   528 ( 13.8%)
+ISIS west fighters                  Coded=1:  558 /  6450 (  8.7%)
+ISIS asia sympathiser               Coded=1:  216 /  2623 (  8.2%)
+Kurdish western fighter             Coded=1:  244 /  7643 (  3.2%)
+
+================================================================================
+END OF REPORT
+================================================================================
