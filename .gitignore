@@ -1,20 +1,52 @@
-/Fighter and sympathiser
-/OneDrive
-/Report Slide
-__pycache__
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# =========================
+# Python cache / tooling
+# =========================
+__pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.db
-*.sqlite3
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Logs / temp / local db
+# =========================
 *.log
 *.bak
 *.tmp
-*.swp
-.DS_Store
-Thumbs.db
+*.db
+*.sqlite3
+.env
+.env.*
+
+# =========================
+# Archives / binaries
+# =========================
 *.zip
+*.tar
 *.tar.gz
+*.tgz
 *.rar
 *.7z
 *.exe
@@ -24,6 +56,50 @@ Thumbs.db
 *.class
 *.jar
 *.war
+*.pdf
+
+# =========================
+# Project data (ignore heavy/raw artifacts)
+# =========================
+/data/
+/Fighter and sympathiser/
+/OneDrive/
+/Report Slide/
+
+# Ignore downloaded dataset contents by default,
+# but keep dataset scripts tracked.
+/dataset/**
+!/dataset/download_dataset.py
+
+# =========================
+# RAG generated artifacts
+# =========================
+/RAGBasedAI/evidence_index/
+/RAGBasedAI/rule_index/
+/RAGBasedAI/indicator_mapping.json
+
+# =========================
+# Simulation generated artifacts
+# =========================
+/Simulation/generated_samples/
+/Simulation/analysis_radicality/
+/Simulation/generation_log.txt
+
+# =========================
+# Inference generated artifacts
+# =========================
+/inference/embeddings_finetuned/
+/inference/*.jsonl
+/inference/*.json
+/inference/*.csv
+
+# =========================
+# Statistics generated artifacts
+# =========================
+/statistic_analysis/analysis_coded/
+/statistic_analysis/analysis_coded_text_statistic/
+/statistic_analysis/analysis_dual_reports/
+/statistic_analysis/analysis_results/
+
+# Generic generated data files
 *.jsonl
-/data  
-/dataset
