@@ -28,10 +28,17 @@ if [ ! -f "codebook.txt" ]; then
     echo "❌ codebook.txt not found"
     exit 1
 fi
-if [ ! -f "../Fighter and sympathiser/coded_samples.csv" ]; then
+if [ -f "../data/Fighter and sympathiser/coded_samples.csv" ]; then
+    CODED_CSV="../data/Fighter and sympathiser/coded_samples.csv"
+elif [ -f "../Fighter and sympathiser/coded_samples.csv" ]; then
+    CODED_CSV="../Fighter and sympathiser/coded_samples.csv"
+else
     echo "❌ coded_samples.csv not found"
+    echo "   Checked: ../data/Fighter and sympathiser/coded_samples.csv"
+    echo "   Checked: ../Fighter and sympathiser/coded_samples.csv"
     exit 1
 fi
+echo "✓ Found coded samples: $CODED_CSV"
 echo "✓ All required files present"
 echo ""
 

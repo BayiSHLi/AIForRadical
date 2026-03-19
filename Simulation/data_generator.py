@@ -13,6 +13,7 @@ from typing import List, Dict, Optional
 import jsonlines
 
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
+from prompt_builder import build_hf_instruction_prompt
 from simulator_config import (
     MODEL_CONFIG, 
     GENERATION_PARAMS, 
@@ -100,24 +101,13 @@ class DataGenerator:
         
         ind_config = INDICATORS[indicator]
         rad_config = RADICALITY_LEVELS[radicality]
-        
-        # 使用更简洁的 prompt 模板（适配 Mistral）
-        prompt = f"""[INST] You are a social media content generator. Generate a realistic social media post (tweet, Facebook comment, etc.) based on the following:
 
-Topic: {ind_config['description']}
-Intensity Level: {radicality} - {rad_config['description'][:100]}
-
-Requirements:
-- Write 1-2 sentences (30-150 characters)
-- Sound natural and authentic
-- Match the topic and intensity level
-
-Example style: {ind_config['example_content'][:80]}...
-
-Generate the post: [/INST]
-
-"""
-        return prompt
+        return build_hf_instruction_prompt(
+            indicator=indicator,
+            radicality=radicality,
+            ind_config=ind_config,
+            rad_config=rad_config,
+        )
     
     def generate_sample(self, indicator: str, radicality: str, sample_id: int) -> Dict:
         """

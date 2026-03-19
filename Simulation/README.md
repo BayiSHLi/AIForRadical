@@ -22,6 +22,7 @@
 ```
 Simulation/
 ├── simulator_config.py          # 配置文件：模型、参数、indicator 定义
+├── prompt_builder.py            # 统一管理各生成器的 prompt 模板
 ├── full_indicators.py           # 79 个 indicator 的完整配置
 ├── data_generator.py            # 核心生成脚本
 ├── requirements.txt             # 依赖列表
@@ -47,7 +48,7 @@ ollama pull qwen2.5:7b
 
 ### 2. 运行生成器（推荐方式）
 ```bash
-cd /home/user/workspace/SHLi/AI\ for\ radicalisation/Simulation
+cd Simulation
 python3 data_generator_ollama.py
 ```
 
@@ -102,6 +103,28 @@ GENERATION_PARAMS = {
     "do_sample": True,          # 是否采样（否则为贪心解码）
 }
 ```
+
+### Prompt 管理 (prompt_builder.py)
+
+现在不同生成器共享同一套 prompt 文件，便于统一调整：
+
+- `build_ollama_generation_prompt(...)`：供 `data_generator_ollama.py` 使用
+- `build_hf_instruction_prompt(...)`：供 `data_generator.py` 使用
+- `build_fp16_instruction_prompt(...)`：供 `data_generator_fp16.py` 使用
+- `sample_diversity_profile()`：从多样性池采样组合策略
+
+当前内置多样性池（可按需扩展）：
+
+- `STYLE_POOL`：叙事风格
+- `LENGTH_POOL`：句长/字符长度目标
+- `VOICE_POOL`：叙事人称
+- `TONE_POOL`：语气
+- `STRUCTURE_POOL`：句式结构
+- `PUNCTUATION_POOL`：标点习惯
+- `LEXICON_POOL`：词汇风格
+- `OPENING_POOL`：开头策略
+
+如需调整提示词风格或结构，优先修改 `prompt_builder.py`。
 
 ## 📊 测试配置
 

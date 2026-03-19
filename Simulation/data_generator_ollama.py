@@ -13,6 +13,7 @@ import jsonlines
 
 from llama_index.llms.ollama import Ollama
 from full_indicators import FULL_INDICATORS
+from prompt_builder import build_ollama_generation_prompt, sample_diversity_profile
 from simulator_config import (
     RADICALITY_LEVELS,
     INDICATORS,
@@ -29,17 +30,6 @@ logger = logging.getLogger(__name__)
 
 class DataGeneratorOllama:
     """使用 llama_index Ollama 的数据生成器"""
-    
-    STYLE_POOL = [
-        "first_person_reflection",
-        "short_status_update",
-        "question_to_audience",
-        "observational_commentary",
-        "emotion_forward",
-        "neutral_informational",
-        "dialogue_snippet",
-        "micro_story",
-    ]
 
     def __init__(self, model_name: str = "qwen2.5:7b", temperature: float = 0.8):
         """
@@ -84,47 +74,23 @@ class DataGeneratorOllama:
         radicality: str,
         style_hint: str,
         banned_snippets: List[str],
+        diversity_profile: Optional[Dict[str, str]] = None,
     ) -> str:
         """构建生成样本的 prompt"""
         if indicator not in self.indicator_catalog:
             raise ValueError(f"Unknown indicator: {indicator}")
         if radicality not in RADICALITY_LEVELS:
             raise ValueError(f"Unknown radicality: {radicality}")
-        
-        ind_config = self.indicator_catalog[indicator]
-        rad_config = RADICALITY_LEVELS[radicality]
-        example_content = ind_config.get("example_content", "")
-        keywords = rad_config.get("keywords", [])
-        keyword_text = ", ".join(keywords[:4]) if keywords else "N/A"
 
-        banned_block = "\n".join([f"- {s[:80]}" for s in banned_snippets[:6]]) if banned_snippets else "- None"
-
-        prompt = f"""You generate one synthetic social media post for research data augmentation.
-
-Indicator ID: {indicator}
-Indicator Factor: {ind_config.get('factor', 'N/A')}
-Indicator Meaning: {ind_config.get('description', 'N/A')}
-
-Radicality level: {radicality}
-Radicality definition: {rad_config.get('description', '')}
-Signal words for this level: {keyword_text}
-
-Style requirement: {style_hint}
-Language policy: mainly English, allow occasional short internet slang, no hashtags unless natural.
-Length: 1-2 sentences, 35-180 characters.
-
-Diversity constraints:
-1) Use a fresh wording pattern and sentence structure.
-2) Do NOT reuse these snippets:
-{banned_block}
-3) Avoid repetitive openers like "Feeling..." unless clearly necessary.
-4) Keep it natural, specific, and varied.
-
-Reference style sample (not to copy): {example_content[:140] if example_content else 'N/A'}
-
-Output format: return ONLY the post text, no quotes, no explanation, no JSON."""
-        
-        return prompt
+        return build_ollama_generation_prompt(
+            indicator=indicator,
+            radicality=radicality,
+            ind_config=self.indicator_catalog[indicator],
+            rad_config=RADICALITY_LEVELS[radicality],
+            style_hint=style_hint,
+            banned_snippets=banned_snippets,
+            diversity_profile=diversity_profile,
+        )
     
     def _normalize_for_dedup(self, text: str) -> str:
         lowered = text.lower().strip()
@@ -144,9 +110,16 @@ Output format: return ONLY the post text, no quotes, no explanation, no JSON."""
         seen = {self._normalize_for_dedup(x) for x in existing_contents}
         
         for attempt in range(1, 6):
-            style_hint = random.choice(self.STYLE_POOL)
+            diversity_profile = sample_diversity_profile()
+            style_hint = diversity_profile["style"]
             banned = random.sample(existing_contents, k=min(len(existing_contents), 6)) if existing_contents else []
-            prompt = self.build_prompt(indicator, radicality, style_hint, banned)
+            prompt = self.build_prompt(
+                indicator,
+                radicality,
+                style_hint,
+                banned,
+                diversity_profile=diversity_profile,
+            )
 
             try:
                 temperature = min(1.1, self.temperature + (attempt - 1) * 0.05)

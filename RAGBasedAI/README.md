@@ -57,7 +57,7 @@ python build_evidence_index.py
 ```
 
 This will:
-- Read CSV data from `Fighter and sympathiser/coded_samples.csv`
+- Read CSV data from `data/Fighter and sympathiser/coded_samples.csv` (or legacy `Fighter and sympathiser/coded_samples.csv`)
 - Create documents with content and metadata
 - Build embeddings using BAAI/bge-m3
 - Persist the index to `./evidence_index/`

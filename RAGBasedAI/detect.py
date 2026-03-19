@@ -8,10 +8,10 @@ from llama_index.llms.ollama import Ollama
 from llama_index.postprocessor.flag_embedding_reranker import FlagEmbeddingReranker
 
 # ===== Configuration =====
-BASE_DIR = "/home/user/workspace/SHLi/AI for radicalisation/RAGBasedAI"
-EVIDENCE_INDEX_PATH = os.path.join(BASE_DIR, "evidence_index")
-RULE_INDEX_PATH = os.path.join(BASE_DIR, "rule_index")
-INDICATOR_MAPPING_PATH = os.path.join(BASE_DIR, "indicator_mapping.json")
+BASE_DIR = Path(__file__).resolve().parent
+EVIDENCE_INDEX_PATH = BASE_DIR / "evidence_index"
+RULE_INDEX_PATH = BASE_DIR / "rule_index"
+INDICATOR_MAPPING_PATH = BASE_DIR / "indicator_mapping.json"
 
 # ===== Load Indicator Mapping =====
 print("Loading indicator mapping...")
@@ -32,7 +32,7 @@ Settings.embed_model = embed_model
 # ===== Load Evidence Index =====
 print(f"Loading evidence index from {EVIDENCE_INDEX_PATH}...")
 try:
-    evidence_storage = StorageContext.from_defaults(persist_dir=EVIDENCE_INDEX_PATH)
+    evidence_storage = StorageContext.from_defaults(persist_dir=str(EVIDENCE_INDEX_PATH))
     evidence_index = load_index_from_storage(
         evidence_storage,
         embed_model=embed_model,
@@ -46,7 +46,7 @@ except Exception as e:
 # ===== Load Rule Index (optional) =====
 print(f"Loading rule index from {RULE_INDEX_PATH}...")
 try:
-    rule_storage = StorageContext.from_defaults(persist_dir=RULE_INDEX_PATH)
+    rule_storage = StorageContext.from_defaults(persist_dir=str(RULE_INDEX_PATH))
     rule_index = load_index_from_storage(
         rule_storage,
         embed_model=embed_model,

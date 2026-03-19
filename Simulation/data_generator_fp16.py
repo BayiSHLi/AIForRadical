@@ -12,6 +12,7 @@ from typing import List, Dict, Optional
 import jsonlines
 
 from transformers import AutoTokenizer, AutoModelForCausalLM
+from prompt_builder import build_fp16_instruction_prompt
 from simulator_config import (
     MODEL_CONFIG, 
     GENERATION_PARAMS, 
@@ -83,20 +84,13 @@ class DataGeneratorFP16:
         
         ind_config = INDICATORS[indicator]
         rad_config = RADICALITY_LEVELS[radicality]
-        
-        # 使用 Mistral 的指令格式
-        prompt = f"""[INST] Generate a short social media post (1-2 sentences) about: {ind_config['description']}
 
-Intensity: {radicality} level
-Style: Natural, authentic social media language
-Length: 30-120 characters
-
-Example: {ind_config['example_content'][:60]}
-
-Write the post: [/INST]
-
-"""
-        return prompt
+        return build_fp16_instruction_prompt(
+            indicator=indicator,
+            radicality=radicality,
+            ind_config=ind_config,
+            rad_config=rad_config,
+        )
     
     def generate_sample(self, indicator: str, radicality: str, sample_id: int) -> Dict:
         """生成单个样本"""

@@ -5,6 +5,7 @@ Coded Content Analysis Module
 """
 
 import os
+import sys
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -17,8 +18,30 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import warnings
 import re
+from pathlib import Path
 
 warnings.filterwarnings('ignore')
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+
+def resolve_dataset_root() -> Path:
+    """Resolve dataset directory across possible repository layouts."""
+    candidates = [
+        PROJECT_ROOT / "data" / "Fighter and sympathiser",
+        PROJECT_ROOT / "Fighter and sympathiser",
+    ]
+    for path in candidates:
+        if path.exists() and path.is_dir():
+            return path
+    checked = "\n".join([f"  - {p}" for p in candidates])
+    raise FileNotFoundError(
+        "Dataset root not found. Checked:\n"
+        f"{checked}"
+    )
 
 
 class CodedAnalyzer:
@@ -1069,7 +1092,7 @@ def main():
     print("="*80)
     
     # 加载数据
-    root_dir = r"/home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser"
+    root_dir = str(resolve_dataset_root())
     print(f"\n正在加载数据集: {root_dir}")
     dataset = RadicalisationDataset(root_dir)
     

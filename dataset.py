@@ -11,6 +11,25 @@ import re
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
+
+PROJECT_ROOT = Path(__file__).resolve().parent
+
+
+def resolve_dataset_root() -> Path:
+    """Resolve dataset directory across possible repository layouts."""
+    candidates = [
+        PROJECT_ROOT / "data" / "Fighter and sympathiser",
+        PROJECT_ROOT / "Fighter and sympathiser",
+    ]
+    for path in candidates:
+        if path.exists() and path.is_dir():
+            return path
+    checked = "\n".join([f"  - {p}" for p in candidates])
+    raise FileNotFoundError(
+        "Dataset root not found. Checked:\n"
+        f"{checked}"
+    )
+
 # Stopwords for filtering common words
 try:
     from nltk.corpus import stopwords
@@ -1184,7 +1203,7 @@ def create_dataloaders(dataset, batch_size=4, num_workers=0, train_ratio=0.8):
 
 # Usage Example
 def usage_example():
-    root_dir = r"c:\Users\shanghong.li\Desktop\AI for radicalisation\Fighter and sympathiser"
+    root_dir = str(resolve_dataset_root())
     
     # Create Dataset
     print("Loading data...")
@@ -1270,7 +1289,8 @@ def usage_example():
     print("\n✓ All tasks completed")
 
 if __name__ == "__main__":
-    root_dir = r"/home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser"
+    dataset_root = resolve_dataset_root()
+    root_dir = str(dataset_root)
     
     # Create Dataset
     print("Loading data...")
@@ -1278,6 +1298,6 @@ if __name__ == "__main__":
     dataset = RadicalisationDataset(root_dir)
     # 同时提取coded和non-coded样本
     coded_df, non_coded_df = dataset.extract_all_coded_status(
-        coded_output='./Fighter and sympathiser/coded_samples.csv',
-        non_coded_output='./Fighter and sympathiser/non_coded_samples.csv'
+        coded_output=str(dataset_root / 'coded_samples.csv'),
+        non_coded_output=str(dataset_root / 'non_coded_samples.csv')
     )

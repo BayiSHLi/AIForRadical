@@ -13,21 +13,40 @@ print("RAG SYSTEM VALIDATION TEST")
 print("="*80)
 print()
 
+BASE_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = BASE_DIR.parent
+
+
+def resolve_coded_csv() -> Path:
+    candidates = [
+        PROJECT_ROOT / "data" / "Fighter and sympathiser" / "coded_samples.csv",
+        PROJECT_ROOT / "Fighter and sympathiser" / "coded_samples.csv",
+    ]
+    for path in candidates:
+        if path.exists():
+            return path
+    checked = "\n".join([f"  - {p}" for p in candidates])
+    print("❌ coded_samples.csv not found. Checked:")
+    print(checked)
+    sys.exit(1)
+
 # Test 1: Check file existence
 print("[Test 1] Checking required files...")
+coded_csv_path = resolve_coded_csv()
 required_files = [
-    "../Fighter and sympathiser/coded_samples.csv",
-    "codebook.txt",
-    "build_evidence_index.py",
-    "detect.py",
-    "build_rule_nodes.py"
+    coded_csv_path,
+    BASE_DIR / "codebook.txt",
+    BASE_DIR / "build_evidence_index.py",
+    BASE_DIR / "detect.py",
+    BASE_DIR / "build_rule_nodes.py",
 ]
 
 all_exist = True
 for file in required_files:
-    exists = os.path.exists(file)
+    exists = Path(file).exists()
     status = "✓" if exists else "✗"
-    print(f"  {status} {file}")
+    display = os.path.relpath(file, start=PROJECT_ROOT)
+    print(f"  {status} {display}")
     if not exists:
         all_exist = False
 
@@ -67,8 +86,10 @@ print("✓ All dependencies installed\n")
 
 # Test 3: Check index status
 print("[Test 3] Checking index status...")
-evidence_index_exists = os.path.isdir("./evidence_index") and len(os.listdir("./evidence_index")) > 0
-rule_index_exists = os.path.isdir("./rule_index") and len(os.listdir("./rule_index")) > 0
+evidence_dir = BASE_DIR / "evidence_index"
+rule_dir = BASE_DIR / "rule_index"
+evidence_index_exists = evidence_dir.is_dir() and len(os.listdir(evidence_dir)) > 0
+rule_index_exists = rule_dir.is_dir() and len(os.listdir(rule_dir)) > 0
 
 if evidence_index_exists:
     print("  ✓ Evidence index found")
@@ -100,11 +121,11 @@ if evidence_index_exists and rule_index_exists:
         Settings.embed_model = embed_model
         
         print("  Loading indices...")
-        evidence_storage = StorageContext.from_defaults(persist_dir="./evidence_index")
+        evidence_storage = StorageContext.from_defaults(persist_dir=str(evidence_dir))
         evidence_index = load_index_from_storage(evidence_storage, embed_model=embed_model)
         print("  ✓ Evidence index loaded")
         
-        rule_storage = StorageContext.from_defaults(persist_dir="./rule_index")
+        rule_storage = StorageContext.from_defaults(persist_dir=str(rule_dir))
         rule_index = load_index_from_storage(rule_storage, embed_model=embed_model)
         print("  ✓ Rule index loaded")
         

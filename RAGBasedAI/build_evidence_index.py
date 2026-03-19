@@ -8,8 +8,28 @@ from llama_index.core.node_parser import SimpleNodeParser
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 # ===== Configuration =====
-OUTPUT_DIR = "./evidence_index"
-CSV_PATH = "/home/user/workspace/SHLi/AI for radicalisation/Fighter and sympathiser/coded_samples.csv"
+BASE_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = BASE_DIR.parent
+OUTPUT_DIR = BASE_DIR / "evidence_index"
+
+
+def resolve_coded_csv_path() -> Path:
+    """Resolve coded_samples.csv across possible dataset layouts."""
+    candidates = [
+        PROJECT_ROOT / "data" / "Fighter and sympathiser" / "coded_samples.csv",
+        PROJECT_ROOT / "Fighter and sympathiser" / "coded_samples.csv",
+    ]
+    for path in candidates:
+        if path.exists():
+            return path
+    checked = "\n".join([f"  - {p}" for p in candidates])
+    raise FileNotFoundError(
+        "coded_samples.csv not found. Checked:\n"
+        f"{checked}"
+    )
+
+
+CSV_PATH = resolve_coded_csv_path()
 
 # ===== Setup =====
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -98,14 +118,14 @@ except Exception as e:
 # ===== Persist Index =====
 print(f"Persisting index to {OUTPUT_DIR}...")
 try:
-    index.storage_context.persist(OUTPUT_DIR)
+    index.storage_context.persist(str(OUTPUT_DIR))
     print(f"✓ Index persisted to {OUTPUT_DIR}")
 except Exception as e:
     print(f"❌ Error persisting index: {e}")
     exit(1)
 
 # ===== Save Metadata as JSON =====
-metadata_path = os.path.join(OUTPUT_DIR, "metadata.json")
+metadata_path = OUTPUT_DIR / "metadata.json"
 try:
     with open(metadata_path, 'w', encoding='utf-8') as f:
         json.dump(metadata_list, f, ensure_ascii=False, indent=2)
@@ -121,8 +141,7 @@ print(f"Total documents: {len(documents)}")
 print(f"Total nodes: {len(nodes)}")
 print(f"Index directory: {OUTPUT_DIR}")
 print(f"Files created:")
-for file in os.listdir(OUTPUT_DIR):
-    file_path = os.path.join(OUTPUT_DIR, file)
-    file_size = os.path.getsize(file_path) / (1024*1024)  # Convert to MB
-    print(f"  - {file} ({file_size:.2f} MB)")
+for file_path in sorted(OUTPUT_DIR.iterdir()):
+    file_size = file_path.stat().st_size / (1024*1024)  # Convert to MB
+    print(f"  - {file_path.name} ({file_size:.2f} MB)")
 print("="*80)

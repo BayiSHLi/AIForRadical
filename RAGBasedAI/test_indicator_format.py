@@ -5,19 +5,21 @@ import os
 import json
 import re
 import sys
+from pathlib import Path
 
 # 测试 build_rule_nodes.py 的指标解析逻辑
 print("="*60)
 print("TESTING INDICATOR EXTRACTION")
 print("="*60)
 
-codebook_path = "/home/user/workspace/SHLi/AI for radicalisation/RAGBasedAI/codebook.txt"
+base_dir = Path(__file__).resolve().parent
+codebook_path = base_dir / "codebook.txt"
 
 if not os.path.exists(codebook_path):
     print(f"❌ Codebook not found: {codebook_path}")
     sys.exit(1)
 
-with open(codebook_path, "r") as f:
+with open(codebook_path, "r", encoding="utf-8") as f:
     content = f.read()
 
 # 使用与 build_rule_nodes.py 相同的正则表达式

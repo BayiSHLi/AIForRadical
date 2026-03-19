@@ -1,5 +1,6 @@
 import re
 import json
+from pathlib import Path
 
 from llama_index.core import Document
 from llama_index.core.node_parser import SimpleNodeParser
@@ -11,7 +12,10 @@ from llama_index.core.indices.vector_store import VectorStoreIndex
 embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-m3")
 
 # ===== 读取codebook.txt并解析indicators =====
-with open("/home/user/workspace/SHLi/AI for radicalisation/RAGBasedAI/codebook.txt", "r") as f:
+BASE_DIR = Path(__file__).resolve().parent
+CODEBOOK_PATH = BASE_DIR / "codebook.txt"
+
+with open(CODEBOOK_PATH, "r", encoding="utf-8") as f:
     content = f.read()
 
 # ===== 使用正则表达式提取所有indicator =====
@@ -101,10 +105,10 @@ index = VectorStoreIndex(
     embed_model=embed_model,
 )
 
-index.storage_context.persist("./rule_index")
+index.storage_context.persist(str(BASE_DIR / "rule_index"))
 
 # ===== 保存indicator mapping供detect.py使用 =====
-mapping_file = "./indicator_mapping.json"
+mapping_file = BASE_DIR / "indicator_mapping.json"
 with open(mapping_file, "w", encoding="utf-8") as f:
     json.dump({
         "total_indicators": len(indicator_list),

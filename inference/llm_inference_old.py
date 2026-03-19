@@ -1,9 +1,32 @@
 import torch
 import pandas as pd
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from dataset import RadicalisationDataset
 import time
 from datetime import datetime, timedelta
+import sys
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from dataset import RadicalisationDataset
+
+
+def resolve_dataset_root() -> Path:
+    """Resolve dataset directory across possible repository layouts."""
+    candidates = [
+        PROJECT_ROOT / "data" / "Fighter and sympathiser",
+        PROJECT_ROOT / "Fighter and sympathiser",
+    ]
+    for path in candidates:
+        if path.exists() and path.is_dir():
+            return path
+    checked = "\n".join([f"  - {p}" for p in candidates])
+    raise FileNotFoundError(
+        "Dataset root not found. Checked:\n"
+        f"{checked}"
+    )
 
 # -----------------------------
 # 1. Model config
@@ -153,8 +176,7 @@ Return the result using the predefined JSON format.
 # -----------------------------
 # 4. Load dataset (use existing RadicalisationDataset)
 # -----------------------------
-# Update this path if your dataset is in a different location
-ROOT_DIR = r"c:\Users\shanghong.li\Desktop\AI for radicalisation\Fighter and sympathiser"
+ROOT_DIR = str(resolve_dataset_root())
 dataset = RadicalisationDataset(ROOT_DIR)
 
 # We'll iterate over `dataset.data`, which contains normalized rows
