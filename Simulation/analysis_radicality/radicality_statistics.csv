@@ -1,5 +1,0 @@
-Radicality,Sample_Count,Unique_Indicators,Avg_Word_Count,Avg_Char_Count,Max_Word_Count,Min_Word_Count,Max_Char_Count,Min_Char_Count,Median_Word_Count,Std_Word_Count
-Neutral,1580,79,17.78,103.99,37,8,202,48,17.0,4.09
-Low,1580,79,18.31,112.05,46,5,249,52,18.0,3.85
-Medium,1580,79,19.21,116.67,37,0,220,38,19.0,4.57
-High,1580,79,19.15,114.36,47,5,273,54,18.0,4.95
