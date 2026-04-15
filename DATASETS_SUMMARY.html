@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据集汇总表</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.4em;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.05em;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 36px;
+        }
+        h2 {
+            color: #667eea;
+            margin: 30px 0 20px 0;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            font-size: 1.55em;
+        }
+        p.note {
+            color: #333;
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+        }
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            border: none;
+            font-size: 0.95em;
+        }
+        td {
+            padding: 11px 12px;
+            border-bottom: 1px solid #e0e0e0;
+            vertical-align: top;
+            line-height: 1.45;
+            font-size: 0.95em;
+        }
+        tr:hover {
+            background: #f5f5f5;
+        }
+        tr:nth-child(even) {
+            background: #fafafa;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 18px;
+            margin: 30px 0;
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 18px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-card .number {
+            font-size: 1.85em;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .stat-card .label {
+            font-size: 0.92em;
+            opacity: 0.92;
+        }
+        .usage {
+            background: #f0f8ff;
+            padding: 16px;
+            border-left: 4px solid #667eea;
+            margin: 10px 0;
+            border-radius: 4px;
+            line-height: 1.55;
+        }
+        .usage strong {
+            color: #2f57cc;
+        }
+        .footer {
+            background: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        a {
+            color: #2f57cc;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>数据集汇总表</h1>
+            <p>激进化检测 + Personality Prediction / User Profiling 数据资源清单</p>
+        </div>
+
+        <div class="content">
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="number">8</div>
+                    <div class="label">激进化主线数据集</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">8</div>
+                    <div class="label">人格/用户画像数据集</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">11</div>
+                    <div class="label">TweetEval 子集</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">16</div>
+                    <div class="label">合计主要数据集</div>
+                </div>
+            </div>
+
+            <h2>A. 激进化主线数据集</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>数据集</th>
+                        <th>来源</th>
+                        <th>用途</th>
+                        <th>存储路径</th>
+                        <th>数据类型</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>TweetEval (11 子集)</td><td>HuggingFace</td><td>推文分类与分析</td><td>dataset/tweet_eval/</td><td>文本 + 标签</td></tr>
+                    <tr><td>2</td><td>Hatebase (hate_speech_offensive)</td><td>HuggingFace</td><td>仇恨言论</td><td>dataset/hatebase/</td><td>文本 + 标签</td></tr>
+                    <tr><td>3</td><td>OLID</td><td>HuggingFace</td><td>冒犯性语言</td><td>dataset/olid/</td><td>文本 + 多层标签</td></tr>
+                    <tr><td>4</td><td>Jigsaw (civil_comments)</td><td>HuggingFace</td><td>毒性评论</td><td>dataset/jigsaw/</td><td>文本 + 分数</td></tr>
+                    <tr><td>5</td><td>MC4 英文子集</td><td>HuggingFace</td><td>通用语料</td><td>dataset/mc4_en_small/</td><td>文本</td></tr>
+                    <tr><td>6</td><td>FakeNewsNet</td><td>GitHub</td><td>虚假信息</td><td>dataset/FakeNewsNet/</td><td>新闻文本 + 元数据</td></tr>
+                    <tr><td>7</td><td>CoAID</td><td>GitHub</td><td>COVID-19 虚假信息</td><td>dataset/CoAID/</td><td>文本 + 标签</td></tr>
+                    <tr><td>8</td><td>MIWS_Dataset_Standard</td><td>GitHub</td><td>多语言仇恨言论</td><td>dataset/MIWS_Dataset_Standard/</td><td>文本 + 标签</td></tr>
+                </tbody>
+            </table>
+
+            <h2>B. Personality Prediction / User Profiling</h2>
+            <p class="note">重点字段：数据来源、数据类型、心理学模型、输出形式。前四项为当前必须覆盖数据集。</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>数据集</th>
+                        <th>数据来源</th>
+                        <th>数据类型</th>
+                        <th>心理学模型</th>
+                        <th>输出形式</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Pandora Dataset（项目中为 jingjietan/pandora-big5）</td>
+                        <td><a href="https://huggingface.co/datasets/jingjietan/pandora-big5">huggingface.co/datasets/jingjietan/pandora-big5</a></td>
+                        <td>文本（text）+ O/C/E/A/N + ptype</td>
+                        <td>Big Five（OCEAN）</td>
+                        <td>连续 trait 分数（float）+ ptype（类型字段）</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>myPersonality Dataset</td>
+                        <td><a href="http://mypersonality.org">mypersonality.org</a>（Cambridge Psychometrics）</td>
+                        <td>Facebook 用户画像数据库（人口统计 + 行为/社交）</td>
+                        <td>Big Five / FFM</td>
+                        <td>连续人格分数 + 人口统计标签</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Twitter Personality Dataset（Indonesian）</td>
+                        <td><a href="https://github.com/michellejieli/twitter-personality-classification">github.com/michellejieli/twitter-personality-classification</a></td>
+                        <td>Twitter 文本（约 400 用户、80k tweets）+ 情绪/情感/社交特征</td>
+                        <td>Big Five（OCEAN）</td>
+                        <td>人格维度分类输出（分档或二值）</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Essays Dataset</td>
+                        <td>PAN 2015 相关工作（含 essays.zip 入口）：<a href="https://pan.webis.de/clef15/pan15-web/author-profiling.html">pan.webis.de/clef15/.../author-profiling.html</a></td>
+                        <td>长文本作文 + 人格标注</td>
+                        <td>Big Five（常见版本）</td>
+                        <td>连续 trait 分数或高/低标签（依版本）</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>PAN Author Profiling 2015</td>
+                        <td><a href="https://pan.webis.de/clef15/pan15-web/author-profiling.html">pan.webis.de/clef15/pan15-web/author-profiling.html</a></td>
+                        <td>多语言 Twitter 用户级文本</td>
+                        <td>用户画像 + Big Five 维度预测</td>
+                        <td>XML：age_group、gender、5 个人格维度（-0.5 到 0.5）</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>PAN Author Profiling 2016</td>
+                        <td><a href="https://pan.webis.de/clef16/pan16-web/author-profiling.html">pan.webis.de/clef16/pan16-web/author-profiling.html</a></td>
+                        <td>跨体裁用户文本（训练侧以 Twitter 为主）</td>
+                        <td>用户画像（年龄/性别；非人格量表）</td>
+                        <td>XML：age_group、gender</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Kaggle MBTI（HF 重发布版本）</td>
+                        <td><a href="https://huggingface.co/datasets/jingjietan/kaggle-mbti">huggingface.co/datasets/jingjietan/kaggle-mbti</a></td>
+                        <td>文本 + ptype 字段</td>
+                        <td>MBTI（16 型）</td>
+                        <td>16 类 MBTI 标签或映射维度标签（依版本）</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>TwiBot-22</td>
+                        <td><a href="https://github.com/LuoUndergradXJTU/TwiBot-22">github.com/LuoUndergradXJTU/TwiBot-22</a>；<a href="https://arxiv.org/abs/2206.04564">arxiv.org/abs/2206.04564</a></td>
+                        <td>Twitter 异构图数据（user/tweet/list/hashtag 节点 + edge.csv 边）+ 账号内容特征</td>
+                        <td>非心理学量表（图结构用户画像 / 机器人识别）</td>
+                        <td>label.csv（bot/human）+ split.csv（train/val/test）</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>C. 使用建议</h2>
+            <div class="usage"><strong>人格监督信号：</strong>优先使用 Pandora + myPersonality 进行 trait 预测训练。</div>
+            <div class="usage"><strong>用户画像泛化：</strong>结合 PAN 2015/2016 做跨语言和跨体裁评估。</div>
+            <div class="usage"><strong>任务融合：</strong>将 OCEAN/MBTI 特征与 79 指标向量拼接，进行多任务学习。</div>
+            <div class="usage"><strong>标签统一：</strong>将离散标签映射到统一协议（连续分数优先、离散画像标签补充）。</div>
+        </div>
+
+        <div class="footer">
+            <p>激进化检测项目数据资源清单 | 更新于 2026-04-10</p>
+        </div>
+    </div>
+</body>
+</html>

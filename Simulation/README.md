@@ -6,7 +6,7 @@
 
 - ✅ **生成速度**：< 1 秒/样本（5 个样本共 4.5 秒）
 - ✅ **样本质量**：优秀，内容自然真实
-- ✅ **格式正确**：ID | indicator | Radicality | Content
+- ✅ **格式正确**：统一 schema（含 O/R/M 维度）+ 兼容字段
 - ✅ **已保存**：generated_samples/samples.jsonl
 
 **效率对比：**
@@ -23,10 +23,13 @@
 Simulation/
 ├── simulator_config.py          # 配置文件：模型、参数、indicator 定义
 ├── prompt_builder.py            # 统一管理各生成器的 prompt 模板
+├── external_dataset_pipeline.py # 外部数据处理与索引构建（MIWS）
+├── external_retrieval.py        # 外部数据检索接口（供 simulator 调用）
 ├── full_indicators.py           # 79 个 indicator 的完整配置
 ├── data_generator.py            # 核心生成脚本
 ├── requirements.txt             # 依赖列表
 ├── run.sh                       # 启动脚本
+├── external_data_index/         # 外部数据独立检索索引（新增）
 ├── generated_samples/           # 生成的样本输出目录
 │   └── samples.jsonl           # 生成的样本数据（JSONL 格式）
 ├── codebook.txt                 # 参考的 indicator 样本库
@@ -58,6 +61,19 @@ python3 data_generator_ollama.py
 ```bash
 cat generated_samples/samples.jsonl
 ```
+
+### 4. 构建外部数据 pipeline（MIWS）
+```bash
+cd Simulation
+python3 external_dataset_pipeline.py \
+   --miws-dir ../dataset/MIWS_Dataset_Standard \
+   --output-jsonl external_data/miws_processed.jsonl \
+   --index-dir external_data_index
+```
+
+说明：
+- 该索引与 `evidence_index/`、`rule_index/` 完全独立。
+- pipeline 会读取 MIWS 数据、为每条文本分配 indicator、保留 radicalization 相关 annotation（无则为空字符串）、并构建外部检索索引。
 
 ## 📝 核心配置说明
 
@@ -113,6 +129,11 @@ GENERATION_PARAMS = {
 - `build_fp16_instruction_prompt(...)`：供 `data_generator_fp16.py` 使用
 - `sample_diversity_profile()`：从多样性池采样组合策略
 
+外部数据检索接口：
+
+- `external_retrieval.py` 提供 `ExternalDataRetriever`，可从 `external_data_index/` 检索相似外部样本
+- `data_generator_ollama.py` 已支持自动加载该接口；当索引存在时，检索结果会作为上下文注入生成 prompt
+
 当前内置多样性池（可按需扩展）：
 
 - `STYLE_POOL`：叙事风格
@@ -147,17 +168,39 @@ Low (exposure/awareness)
 
 ## 💾 输出格式
 
-生成的样本保存为 JSONL 格式 (`generated_samples/samples.jsonl`)：
+生成的样本保存为 JSONL 格式 (`generated_samples/samples.jsonl`)。
+
+当前输出已对齐统一 schema（与根目录 README 的 Phase A 建议一致）：
 
 ```json
 {
   "ID": 1,
+   "sample_id": 1,
   "indicator": "individual_loss_interpersonal",
   "Radicality": "Low",
   "Content": "生成的文本内容",
-  "timestamp": "2026-03-04T12:34:56.789012"
+   "text": "生成的文本内容",
+   "timestamp": "2026-03-04T12:34:56.789012",
+   "dimension_scores": {
+      "opinion": 0.45,
+      "radicalization": 0.20,
+      "mobilization": 0.05
+   },
+   "progression_meta": {
+      "target_radicality": "Low",
+      "schema_version": "prmm_v1"
+   },
+   "indicator_vector_79": {
+      "individual_loss_interpersonal": 1.0
+   },
+   "reasoning": "Aligned with Low progression target for this indicator.",
+   "source": "simulation_ollama"
 }
 ```
+
+说明：
+- `ID / indicator / Radicality / Content` 仍保留用于兼容现有脚本。
+- `sample_id / text / dimension_scores / progression_meta / indicator_vector_79 / reasoning / source` 为统一 schema 字段。
 
 ## 🔧 自定义生成
 

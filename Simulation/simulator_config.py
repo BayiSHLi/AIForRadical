@@ -81,7 +81,7 @@ INDICATORS = {
 }
 
 # ============ 输出目录 ============
-OUTPUT_DIR = "generated_samples"
+OUTPUT_DIR = "/home/user/workspace/SHLi/AI for radicalisation/data/generated_samples"
 SAMPLE_FILE = "samples.jsonl"
 
 print("✓ Simulator 配置已加载")

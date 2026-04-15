@@ -101,5 +101,10 @@ ENV/
 /statistic_analysis/analysis_dual_reports/
 /statistic_analysis/analysis_results/
 
+# =========================
+# External models and tools
+# =========================
+external_models/personality_classifier/
+
 # Generic generated data files
 *.jsonl

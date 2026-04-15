@@ -82,6 +82,13 @@ def download_github():
     # MIWS_Dataset
     git_clone("https://github.com/m4gaikwad/MIWS_Dataset_Standard.git", str(BASE_DIR / "MIWS_Dataset_Standard"))
 
+# =========================
+# 3. Personality datasets
+# =========================
+
+def download_personality_datasets():
+    # Pandora Big-5 personality labels
+    download_hf("jingjietan/pandora-big5", str(BASE_DIR / "pandora-big5"))
 
 
 # =========================
@@ -96,6 +103,9 @@ def main():
 
     print("\n=== Step 2: GitHub datasets ===")
     download_github()
+
+    print("\n=== Step 3: Personality datasets ===")
+    download_personality_datasets()
 
     print("\n✅ All datasets downloaded to:", BASE_DIR)
 

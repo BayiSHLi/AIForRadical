@@ -183,3 +183,29 @@ AI for radicalisation/
 2. To-Be：保留 PRMM 研究路线，作为后续迭代目标。
 
 这样可以保证文档既服务当前开发，也不丢失你的整体研究方向。
+
+---
+
+## 9. Personality Prediction / User Profiling 数据集补充
+
+下面补充与本项目相关的人格预测与用户画像数据集，重点给出：数据来源、数据类型、心理学模型、输出形式。
+
+> 说明：其中前四个为当前优先覆盖的数据集（Pandora、myPersonality、Twitter Personality、Essays）。
+
+| 数据集 | 数据来源 | 数据类型 | 心理学模型 | 输出形式 |
+|---|---|---|---|---|
+| **Pandora Dataset**（当前仓库使用 `jingjietan/pandora-big5` 版本） | Hugging Face: https://huggingface.co/datasets/jingjietan/pandora-big5 （项目下载源） | 英文文本（`text`）+ 人格字段（`O/C/E/A/N`、`ptype`） | Big Five（OCEAN） | 数值型 trait 分数（float）+ 类型字段（`ptype`） |
+| **myPersonality Dataset** | Cambridge Psychometrics Centre / myPersonality Wiki: http://mypersonality.org | Facebook 用户画像、人口统计字段、行为与社交字段（数据库表） | Big Five / Five-Factor Model | 连续人格分数 + 人口统计标签（如 gender、age、relationship status） |
+| **Twitter Personality Dataset**（Indonesian） | GitHub 项目数据: https://github.com/michellejieli/twitter-personality-classification | Twitter 文本（约 400 用户、80,000 tweets）+ 情绪/情感/社交特征 | Big Five（OCEAN） | 按人格维度的分类输出（常见为分档或二分类） |
+| **Essays Dataset** | myPersonality 相关公开语料入口（PAN 2015 相关工作页列出 essays.zip）: https://pan.webis.de/clef15/pan15-web/author-profiling.html | 长文本作文 + 人格标注 | Big Five（常见） | 连续分数或高/低二值化 trait 标签（依具体版本） |
+| **PAN Author Profiling 2015** | PAN@CLEF 官方任务页: https://pan.webis.de/clef15/pan15-web/author-profiling.html | 多语言 Twitter 用户级文本 | 用户画像任务（年龄/性别）+ Big Five 维度预测 | 官方 XML：`age_group`、`gender`、`extroverted/stable/agreeable/conscientious/open`（-0.5~0.5） |
+| **PAN Author Profiling 2016** | PAN@CLEF 官方任务页: https://pan.webis.de/clef16/pan16-web/author-profiling.html | 跨体裁用户文本（训练多为 Twitter） | 用户画像（非人格量表，主要年龄/性别） | 官方 XML：`age_group`、`gender` |
+| **Kaggle MBTI（HF 重发布版本）** | Hugging Face: https://huggingface.co/datasets/jingjietan/kaggle-mbti | 文本 + 类型字段（`ptype`） | MBTI（16 型）；部分重发布版本附带 Big Five 风格字段 | 16 类 MBTI 标签或映射后的维度标签（依版本） |
+| **TwiBot-22** | 官方仓库: https://github.com/LuoUndergradXJTU/TwiBot-22；论文: https://arxiv.org/abs/2206.04564 | Twitter 异构图数据（`user/tweet/list/hashtag` 节点 + `edge.csv` 关系边）+ 账号属性/内容特征 | 非心理学量表（图结构账号画像与机器人识别） | `label.csv`（bot/human 标签）+ `split.csv`（train/val/test 划分） |
+
+### 9.1 与本项目的结合建议
+
+1. **高质量人格监督信号**：优先使用 `pandora-big5` + `myPersonality` 构建人格侧监督。
+2. **跨平台泛化**：结合 PAN 2015/2016 做用户画像泛化评估（跨语言/跨体裁）。
+3. **与激进化任务耦合**：将人格维度作为附加特征，与 79 指标向量拼接，探索人格-激进化关联。
+4. **标签对齐策略**：统一到内部 schema（连续分数优先；离散标签可映射到区间）。
